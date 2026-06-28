@@ -5,7 +5,7 @@ public class Main {
 
         //Задача № 1
         System.out.println("Задача № 1");
-        for (int i = 0; i <= 10; i++) {
+        for (int i = 1; i <= 10; i++) {
             System.out.println(i);
         }
         //Задача № 2
@@ -20,17 +20,17 @@ public class Main {
         }
         //Задача № 4
         System.out.println("Задача № 4");
-        for (int i = 10; i > -10; i--) {
+        for (int i = 10; i >= -10; i--) {
             System.out.println(i);
         }
         //Задача № 5
         System.out.println("Задача № 5");
-        for (int i = 1904; i < 2096; i += 4) {
+        for (int i = 1904; i <= 2096; i += 4) {
             System.out.println(i + " год является високосным ");
         }
         //Задача № 6
         System.out.println("Задача № 6");
-        for (int i = 7; i < 98; i += 7) {
+        for (int i = 7; i <= 98; i += 7) {
             System.out.println(i);
         }
         //Задача № 7
@@ -44,16 +44,16 @@ public class Main {
         int pot = 0;
         for (int i = 1; i <= 12; i++) {
             pot = theAmount + pot;
-            System.out.println(" Месяц " + i + ", сумма накоплений равна " + pot);
+            System.out.println(" Месяц " + i + ", сумма накоплений равна " + pot + " рублей ");
         }
         //Задача № 9
         System.out.println("Задача № 9");
         int amount = 29000;
-        int amountInBank = 0;
+        double amountInBank = 0;
         for (int i = 1; i <= 12; i++) {
-            amountInBank = amountInBank + amount / 100;
             amountInBank = amountInBank + amount;
-            System.out.println(" Месяц " + i + ", сумма накоплений равна " + amountInBank);
+            amountInBank = amountInBank * 1.01;
+            System.out.println(" Месяц " + i + ", сумма накоплений равна " + (int) amountInBank + " рублей ");
         }
         //Задача № 10
         System.out.println("Задача № 10");
